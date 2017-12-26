@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit versionator
+inherit versionator git-r3
 EGIT_REPO_URI="https://github.com/gootorov/kernel-manager.git"
 S="${WORKDIR}"
 
@@ -19,6 +19,10 @@ DEPEND="
 	sys-kernel/dracut
 "
 
+src_unpack() {
+	git-r3_src_unpack
+}
+
 src_install() {
-        dobin ${DISTDIR}/src/${A}
+	dobin ${WORKDIR}/${P}/src/*
 }
