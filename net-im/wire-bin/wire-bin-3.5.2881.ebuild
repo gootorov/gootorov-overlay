@@ -1,9 +1,8 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit versionator
 SRC_URI="https://wire-app.wire.com/linux/wire-${PV}-x86_64.AppImage -> ${PN}"
 S="${WORKDIR}"
 
@@ -15,5 +14,5 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 src_install() {
-	dobin ${DISTDIR}/${PN}
+	dobin "${DISTDIR}/${PN}"
 }
