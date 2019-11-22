@@ -3,7 +3,7 @@
 
 EAPI=7
 
-SRC_URI="https://wire-app.wire.com/linux/wire-${PV}-x86_64.AppImage -> ${PN}"
+SRC_URI="https://wire-app.wire.com/linux/Wire-${PV}_x86_64.AppImage -> ${PN}"
 S="${WORKDIR}"
 
 DESCRIPTION="End-to-end encrypted chats, calls and files, protected by European privacy laws."
