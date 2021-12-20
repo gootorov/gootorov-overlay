@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-	sys-kernel/genkernel-next
+	sys-kernel/genkernel
 	sys-kernel/dracut
 "
 
